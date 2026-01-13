@@ -15,9 +15,9 @@ export default function NavBar() {
 
   const navigation = [
     { name: "What We Do", href: "#what-we-do" },
-    { name: "Approach", href: "#approach" },
+    // { name: "Approach", href: "#approach" },
     { name: "Framework", href: "#framework" },
-    { name: "Practice Areas", href: "#practices" },
+    // { name: "Practice Areas", href: "#practices" },
     { name: "Contact", href: "#contact" },
   ];
   return (

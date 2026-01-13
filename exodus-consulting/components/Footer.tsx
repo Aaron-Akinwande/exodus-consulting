@@ -35,9 +35,9 @@ export default function Footer() {
             >
               CONTACT
             </h4>
-            <p style={{ color: "rgba(217, 217, 217, 0.8)" }}>
-              hello@exodus.consulting
-            </p>
+            <a href="mailto:exodusconsulting26@gmail.com" style={{ color: "rgba(217, 217, 217, 0.8)" }}>
+              exodusconsulting26@gmail.com
+            </a>
           </div>
           <div className="md:col-span-2">
             <h4
