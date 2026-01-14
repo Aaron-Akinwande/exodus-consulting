@@ -53,7 +53,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-6">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center px-10 py-5 font-medium transition-all duration-300"
+              className="inline-flex items-center justify-center rounded-md px-10 py-5 font-medium transition-all duration-300"
               style={{
                 backgroundColor: "#D15B12",
                 color: "#ffffff",
@@ -65,7 +65,7 @@ export default function Hero() {
             </a>
             <a
               href="#what-we-do"
-              className="inline-flex items-center justify-center px-10 py-5 font-medium transition-all duration-300"
+              className="inline-flex items-center justify-center rounded-md px-10 py-5 font-medium transition-all duration-300"
               style={{
                 border: "1px solid rgba(217, 217, 217, 0.4)",
                 color: "#D9D9D9",

@@ -1,4 +1,5 @@
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 export default function NavBar() {
@@ -32,8 +33,8 @@ export default function NavBar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-center h-24">
-          <div className="flex items-center space-x-3">
-            <div
+          <div className="flex items-center space-x-3 outline">
+            {/* <div
               className="w-8 h-8"
               style={{ border: "2px solid #D9D9D9" }}
             ></div>
@@ -42,7 +43,9 @@ export default function NavBar() {
               style={{ letterSpacing: "0.3em", color: "#D9D9D9" }}
             >
               EXODUS
-            </span>
+            </span> */}
+                        <Image src={"/smallLogo.PNG"} alt={""} width={100} height={100} />
+            {/* <Image src={"/exodus.PNG"} alt={""} width={65} height={65}  /> */}
           </div>
 
           <div className="hidden md:flex items-center space-x-12">

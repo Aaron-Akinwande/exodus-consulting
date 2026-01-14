@@ -1,4 +1,5 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 export default function Footer() {
   return (
@@ -7,10 +8,10 @@ export default function Footer() {
       style={{ borderTop: "1px solid rgba(217, 217, 217, 0.1)" }}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        <div className="flex flex-col md:flex-row justify-between gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div
+              {/* <div
                 className="w-6 h-6"
                 style={{ border: "1px solid #D9D9D9" }}
               ></div>
@@ -19,7 +20,8 @@ export default function Footer() {
                 style={{ letterSpacing: "0.3em", color: "#D9D9D9" }}
               >
                 EXODUS
-              </span>
+              </span> */}
+              <Image src={"/smallLogo.PNG"} alt={""} width={100} height={100} />
             </div>
             <p
               className="text-sm"
@@ -35,7 +37,11 @@ export default function Footer() {
             >
               CONTACT
             </h4>
-            <a href="mailto:exodusconsulting26@gmail.com" style={{ color: "rgba(217, 217, 217, 0.8)" }}>
+            <a
+              href="mailto:exodusconsulting26@gmail.com"
+              style={{ color: "rgba(217, 217, 217, 0.8)" }}
+              className="md:text-sm lg:text-base "
+            >
               exodusconsulting26@gmail.com
             </a>
           </div>
