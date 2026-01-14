@@ -21,7 +21,7 @@ export default function Footer() {
               >
                 EXODUS
               </span> */}
-              <Image src={"/smallLogo.PNG"} alt={""} width={100} height={100} />
+              <Image src={"/smallLogo.png"} alt={""} width={100} height={100} />
             </div>
             <p
               className="text-sm"

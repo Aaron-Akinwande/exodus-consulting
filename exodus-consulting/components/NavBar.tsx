@@ -33,7 +33,7 @@ export default function NavBar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-center h-24">
-          <div className="flex items-center space-x-3 outline">
+          <div className="flex items-center space-x-3">
             {/* <div
               className="w-8 h-8"
               style={{ border: "2px solid #D9D9D9" }}
@@ -44,7 +44,7 @@ export default function NavBar() {
             >
               EXODUS
             </span> */}
-                        <Image src={"/smallLogo.PNG"} alt={""} width={100} height={100} />
+                        <Image src={"/smallLogo.png"} alt={""} width={100} height={100} />
             {/* <Image src={"/exodus.PNG"} alt={""} width={65} height={65}  /> */}
           </div>
 
