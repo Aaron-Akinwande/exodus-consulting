@@ -11,17 +11,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              {/* <div
-                className="w-6 h-6"
-                style={{ border: "1px solid #D9D9D9" }}
-              ></div>
-              <span
-                className="text-sm"
-                style={{ letterSpacing: "0.3em", color: "#D9D9D9" }}
-              >
-                EXODUS
-              </span> */}
-              <Image src={"/smallLogo.png"} alt={""} width={100} height={100} />
+              <Image
+                src={"/blueSmallLogo.png"}
+                alt={"exodus-logo"}
+                width={150}
+                height={100}
+              />
             </div>
             <p
               className="text-sm"

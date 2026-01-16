@@ -34,18 +34,12 @@ export default function NavBar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-center h-24">
           <div className="flex items-center space-x-3">
-            {/* <div
-              className="w-8 h-8"
-              style={{ border: "2px solid #D9D9D9" }}
-            ></div>
-            <span
-              className="text-xl font-light"
-              style={{ letterSpacing: "0.3em", color: "#D9D9D9" }}
-            >
-              EXODUS
-            </span> */}
-                        <Image src={"/smallLogo.png"} alt={""} width={100} height={100} />
-            {/* <Image src={"/exodus.PNG"} alt={""} width={65} height={65}  /> */}
+            <Image
+              src={"/blueSmallLogo.png"}
+              alt={"exodus-logo"}
+              width={150}
+              height={100}
+            />
           </div>
 
           <div className="hidden md:flex items-center space-x-12">
