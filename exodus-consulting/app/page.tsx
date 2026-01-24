@@ -1,18 +1,19 @@
 "use client";
 
-import Align from "@/components/Align";
-import CTA from "@/components/CTA";
+import Align from "@/components/Home/Align";
+import CTA from "@/components/Home/CTA";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Home/Hero";
 import NavBar from "@/components/NavBar";
-import ProblemStatement from "@/components/ProblemStatement";
-import Services from "@/components/Services";
+import ProblemStatement from "@/components/Home/ProblemStatement";
+import Services from "@/components/Home/Services";
 
 export default function Home() {
   return (
     <div
       className="min-h-screen"
       style={{ backgroundColor: "#0A1F44", color: "#D9D9D9" }}
+      id="top"
     >
       {/* Navigation */}
       <NavBar />

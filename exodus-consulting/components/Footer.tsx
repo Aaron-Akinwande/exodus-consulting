@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 export default function Footer() {
   return (
@@ -10,11 +9,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-12 mb-12">
           <div>
-            <div className="flex items-center space-x-3 mb-4">
+            <div className="flex items-center space-x-3 mb-4 w-fit  rounded-lg overflow-hidden">
               <Image
-                src={"/blueSmallLogo.png"}
+                src={"/whiteSmallLogo.png"}
                 alt={"exodus-logo"}
-                width={150}
+                width={120}
                 height={100}
               />
             </div>
@@ -33,11 +32,11 @@ export default function Footer() {
               CONTACT
             </h4>
             <a
-              href="mailto:exodusconsulting26@gmail.com"
+              href="mailto:Admin@exodusconsults.com"
               style={{ color: "rgba(217, 217, 217, 0.8)" }}
               className="md:text-sm lg:text-base "
             >
-              exodusconsulting26@gmail.com
+              Admin@exodusconsults.com
             </a>
           </div>
           <div className="md:col-span-2">
@@ -89,7 +88,7 @@ export default function Footer() {
             color: "rgba(217, 217, 217, 0.5)",
           }}
         >
-          <p>© 2025 EXODUS Consulting. All rights reserved.</p>
+          <p>© 2026 EXODUS Consulting. All rights reserved.</p>
           <p className="mt-4 md:mt-0">Lagos, Nigeria</p>
         </div>
       </div>

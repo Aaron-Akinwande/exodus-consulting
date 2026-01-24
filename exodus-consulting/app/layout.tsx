@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Book Now | EXODUS Consulting",
+  title: "EXODUS Consulting",
   description: "Schedule a consultation with EXODUS Consulting to transform your enterprise operating system. Discover clarity amidst complexity with our expert guidance.",
 };
 
