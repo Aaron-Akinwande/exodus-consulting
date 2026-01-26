@@ -1,4 +1,4 @@
-import Align from "./Align";
+// import Align from "./Align";
 import Diagnostic from "./Diagnostic";
 import Hero from "./Hero";
 import Philosophy from "./Philosophy";
@@ -8,7 +8,7 @@ export default function Content() {
     <div className="min-h-screen ">
       <Hero />
 
-      <Align />
+      {/* <Align /> */}
 
       <Philosophy />
 

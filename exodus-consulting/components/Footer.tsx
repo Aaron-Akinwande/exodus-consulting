@@ -11,9 +11,9 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-3 mb-4 w-fit  rounded-lg overflow-hidden">
               <Image
-                src={"/whiteSmallLogo.png"}
-                alt={"exodus-logo"}
-                width={120}
+                src="/exoLogo.png"
+                alt="exodus-logo"
+                width={150}
                 height={100}
               />
             </div>

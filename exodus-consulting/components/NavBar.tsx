@@ -44,10 +44,10 @@ export default function NavBar() {
           <div className="flex items-center space-x-3 rounded-lg overflow-hidden">
             <a href="#top" aria-label="Back to top">
               <Image
-                src="/whiteSmallLogo.png"
+                src="/exoLogo.png"
                 alt="exodus-logo"
-                width={120}
-                height={80}
+                width={150}
+                height={100}
               />
             </a>
           </div>

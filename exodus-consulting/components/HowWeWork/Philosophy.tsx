@@ -7,7 +7,7 @@ export default function Philosophy() {
     <div>
       {" "}
       {/* Philosophy */}
-      <section className="px-12 py-20 ">
+      {/* <section className="px-12 py-20 ">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="text-xs tracking-widest text-orange-600 mb-5 font-semibold">
@@ -60,7 +60,7 @@ export default function Philosophy() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* OS Layers */}
       <section className="px-12 py-20 ">
         <div className="max-w-7xl mx-auto">
