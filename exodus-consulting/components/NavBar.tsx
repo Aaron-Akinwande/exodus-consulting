@@ -20,8 +20,8 @@ export default function NavBar() {
 
   const navigation = [
     { name: " Home", href: "/" },
-    { name: "How We Work", href: "/how-we-work" },
     { name: "Our Services", href: "/services" },
+    { name: "How We Work", href: "/how-we-work" },
     { name: "About Us", href: "/about" },
     { name: "Contact", href: "/#contact" },
     // { name: "What We Do", href: "#what-we-do" },

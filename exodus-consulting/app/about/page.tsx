@@ -14,7 +14,7 @@ export default function page() {
        <section
       className="relative min-h-screen flex items-center px-6 lg:px-12 pt-2"
       
-    ></section>
+    >about</section>
       <Footer />
     </div>
   );
