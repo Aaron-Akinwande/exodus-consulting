@@ -80,7 +80,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <style jsx>{`
+      {/* <style jsx>{`
         @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap");
 
         .font-serif {
@@ -141,7 +141,7 @@ export default function ServicesPage() {
         .bg-gradient-radial {
           background: radial-gradient(circle, currentColor 0%, transparent 70%);
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }

@@ -62,7 +62,7 @@ export default function Philosophy() {
         </div>
       </section> */}
       {/* OS Layers */}
-      <section className="px-12 py-20 ">
+      <section className="px-12 py-20 " id="os-layers">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="text-xs tracking-widest text-orange-600 mb-5 font-semibold">

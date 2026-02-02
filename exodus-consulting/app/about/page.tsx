@@ -1,5 +1,6 @@
 "use client";
 
+import AboutPage from "@/components/About/AboutPage";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
@@ -14,7 +15,7 @@ export default function page() {
        <section
       className="relative min-h-screen flex items-center px-6 lg:px-12 pt-2"
       
-    >about</section>
+    ><AboutPage/></section>
       <Footer />
     </div>
   );

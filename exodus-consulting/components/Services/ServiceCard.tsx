@@ -31,7 +31,7 @@ export default function ServiceCard({ service, delay }: any) {
           {service.description}
         </p>
         <a
-          href="#how-we-work"
+          href="/how-we-work#os-layers"
           className="inline-flex items-center gap-2 text-[#D15B12] font-semibold text-base transition-all duration-300 tracking-wide group"
         >
           Learn about our approach

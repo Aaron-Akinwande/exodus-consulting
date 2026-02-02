@@ -1,5 +1,6 @@
 "use client";
 
+import ContactPage from "@/components/Contact/ContactPage";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
@@ -11,10 +12,9 @@ export default function page() {
       id="top"
     >
       <NavBar />
-       <section
-      className="relative min-h-screen flex items-center px-6 lg:px-12 pt-2"
-      
-    >Contact</section>
+      <section className="relative min-h-screen flex items-center px-6 lg:px-12 pt-2">
+        <ContactPage />
+      </section>
       <Footer />
     </div>
   );

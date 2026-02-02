@@ -23,7 +23,7 @@ export default function NavBar() {
     { name: "Our Services", href: "/services" },
     { name: "How We Work", href: "/how-we-work" },
     { name: "About Us", href: "/about" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Contact", href: "/contact" },
     // { name: "What We Do", href: "#what-we-do" },
     // { name: "Framework", href: "#framework" },
     // { name: "Approach", href: "#approach" },
