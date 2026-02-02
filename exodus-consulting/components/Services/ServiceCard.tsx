@@ -19,12 +19,12 @@ export default function ServiceCard({ service, delay }: any) {
       ></div>
 
       {/* Large number watermark */}
-      <span className="absolute top-6 right-8 text-6xl font-bold text-[#C5A880] opacity-20 font-serif leading-none">
+      <span className="absolute top-6 right-8 text-6xl font-light text-[#C5A880] opacity-20 font-serif leading-none">
         {service.number}
       </span>
 
       <div className="relative z-10">
-        <h2 className="text-3xl font-bold text-[#D8CFC4] mb-5 leading-tight font-serif">
+        <h2 className="text-3xl font-light text-[#D8CFC4] mb-5 leading-tight font-serif">
           {service.title}
         </h2>
         <p className="text-lg text-gray-300 leading-relaxed mb-8 opacity-85">

@@ -140,7 +140,7 @@ export default function Philosophy() {
                 }`}
               >
                 {model.popular && (
-                  <div className="absolute top-6 right-6 px-4 py-1.5 bg-orange-600 text-white text-xs font-bold tracking-wider rounded-sm">
+                  <div className="absolute top-6 right-6 px-4 py-1.5 bg-orange-600 text-white text-xs font-light tracking-wider rounded-sm">
                     MOST COMMON
                   </div>
                 )}

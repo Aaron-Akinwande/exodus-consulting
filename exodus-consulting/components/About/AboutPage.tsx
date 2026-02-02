@@ -7,7 +7,7 @@ export default function AboutPage() {
       <div className="relative z-10 max-w-7xl mx-auto px-8">
         {/* Header */}
         <header className="pt-32 pb-12">
-          <h1 className=" text-5xl md:text-6xl lg:text-7xl font-black leading-none mb-8 tracking-tight uppercase">
+          <h1 className=" text-5xl md:text-6xl lg:text-7xl font-light leading-none mb-8 tracking-tight uppercase">
             About
           </h1>
           <p className="text-2xl opacity-70 max-w-3xl font-normal leading-relaxed">
@@ -23,13 +23,11 @@ export default function AboutPage() {
               &quot;
             </div>
             <div className="relative z-10">
-              <h2 className=" text-4xl font-bold mb-8 leading-tight">
-                EXODUS
-              </h2>
+              <h2 className=" text-4xl font-light mb-8 leading-tight">EXODUS</h2>
               <p className="text-2xl leading-relaxed opacity-90">
                 EXODUS is a strategy and people advisory firm operating at the
                 intersection of{" "}
-                <strong className="text-orange-600 font-bold">
+                <strong className="text-orange-600 font-light">
                   strategy, systems, and execution
                 </strong>
                 .
@@ -45,7 +43,7 @@ export default function AboutPage() {
             <div className="text-sm tracking-[0.2em] text-teal-500 uppercase mb-8 font-semibold">
               Our Core Belief
             </div>
-            <p className=" text-4xl md:text-5xl font-bold leading-snug max-w-5xl mx-auto mb-6">
+            <p className=" text-4xl md:text-5xl font-light leading-snug max-w-5xl mx-auto mb-6">
               Sustainable performance is built when strategy, structure, people,
               and culture are deliberately aligned.
               <span className="block text-5xl md:text-6xl text-orange-600 mt-4 italic">
@@ -57,9 +55,7 @@ export default function AboutPage() {
           {/* Focus Section */}
           <section className="py-16">
             <div className="text-center mb-16">
-              <h2 className=" text-4xl font-bold mb-4">
-                Who We Serve
-              </h2>
+              <h2 className=" text-4xl font-light mb-4">Who We Serve</h2>
               <p className="text-xl opacity-60">
                 Our organizational operating system approach is designed for:
               </p>
@@ -99,7 +95,7 @@ export default function AboutPage() {
 
           {/* CTA Section */}
           <section className="text-center py-32 -mx-8 px-8 ">
-            <h2 className=" text-5xl font-bold mb-6">
+            <h2 className=" text-5xl font-light mb-6">
               Ready to Build a Better Operating System?
             </h2>
             <p className="text-xl opacity-70 mb-12 max-w-3xl mx-auto">

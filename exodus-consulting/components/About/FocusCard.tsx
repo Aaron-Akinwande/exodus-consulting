@@ -10,7 +10,7 @@ export default function FocusCard({ icon, title, description }: any) {
         {icon}
       </div>
 
-      <h3 className="font-serif text-xl font-bold text-slate-900 mb-3">
+      <h3 className="font-serif text-xl font-light text-slate-900 mb-3">
         {title}
       </h3>
 

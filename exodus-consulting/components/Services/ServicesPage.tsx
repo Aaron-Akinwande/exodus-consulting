@@ -41,7 +41,7 @@ export default function ServicesPage() {
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         {/* Header */}
         <header className="pt-24 pb-16 animate-fade-in-down">
-          <h1 className="text-6xl md:text-7xl font-bold text-[#D8CFC4] mb-6 leading-tight tracking-tight">
+          <h1 className="text-6xl md:text-7xl font-light text-[#D8CFC4] mb-6 leading-tight tracking-tight">
             Services
           </h1>
           <p className="text-2xl text-gray-300 max-w-2xl opacity-90">
@@ -62,7 +62,7 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-linear-to-br from-transparent to-[#4CA2A8]/10"></div>
 
         <div className="max-w-7xl mx-auto px-8 text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#D8CFC4] mb-4 font-serif">
+          <h2 className="text-4xl md:text-5xl font-light text-[#D8CFC4] mb-4 font-serif">
             Ready to strengthen your organization?
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8 opacity-90">
