@@ -6,8 +6,8 @@ export default function AboutPage() {
     <div className="relative min-h-screen  overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-8">
         {/* Header */}
-        <header className="pt-32 pb-12 animate-fadeInDown">
-          <h1 className="font-serif text-7xl md:text-8xl lg:text-9xl font-black leading-none mb-8 tracking-tight uppercase">
+        <header className="pt-32 pb-12">
+          <h1 className=" text-5xl md:text-6xl lg:text-7xl font-black leading-none mb-8 tracking-tight uppercase">
             About
           </h1>
           <p className="text-2xl opacity-70 max-w-3xl font-normal leading-relaxed">
@@ -19,11 +19,11 @@ export default function AboutPage() {
         <div className="space-y-12 pb-12">
           {/* Manifesto Section */}
           <section className="bg-slate-300 text-slate-900 border-l-4 border-orange-600 p-16 relative overflow-hidden shadow-sm">
-            <div className="absolute top-0 left-8 font-serif text-[20rem] opacity-[0.02] leading-none select-none pointer-events-none">
+            <div className="absolute top-0 left-8  text-[20rem] opacity-[0.02] leading-none select-none pointer-events-none">
               &quot;
             </div>
             <div className="relative z-10">
-              <h2 className="font-serif text-4xl font-bold mb-8 leading-tight">
+              <h2 className=" text-4xl font-bold mb-8 leading-tight">
                 EXODUS
               </h2>
               <p className="text-2xl leading-relaxed opacity-90">
@@ -45,7 +45,7 @@ export default function AboutPage() {
             <div className="text-sm tracking-[0.2em] text-teal-500 uppercase mb-8 font-semibold">
               Our Core Belief
             </div>
-            <p className="font-serif text-4xl md:text-5xl font-bold leading-snug max-w-5xl mx-auto mb-6">
+            <p className=" text-4xl md:text-5xl font-bold leading-snug max-w-5xl mx-auto mb-6">
               Sustainable performance is built when strategy, structure, people,
               and culture are deliberately aligned.
               <span className="block text-5xl md:text-6xl text-orange-600 mt-4 italic">
@@ -57,7 +57,7 @@ export default function AboutPage() {
           {/* Focus Section */}
           <section className="py-16">
             <div className="text-center mb-16">
-              <h2 className="font-serif text-4xl font-bold mb-4">
+              <h2 className=" text-4xl font-bold mb-4">
                 Who We Serve
               </h2>
               <p className="text-xl opacity-60">
@@ -99,7 +99,7 @@ export default function AboutPage() {
 
           {/* CTA Section */}
           <section className="text-center py-32 -mx-8 px-8 ">
-            <h2 className="font-serif text-5xl font-bold mb-6">
+            <h2 className=" text-5xl font-bold mb-6">
               Ready to Build a Better Operating System?
             </h2>
             <p className="text-xl opacity-70 mb-12 max-w-3xl mx-auto">

@@ -7,8 +7,8 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         {/* Header */}
         <header className="pt-32 pb-16 text-center animate-[fadeInDown_1s_ease-out]">
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold mb-8 tracking-tight uppercase leading-none">
-            Contact
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tight uppercase leading-none">
+            Contact us
           </h1>
           <p className="text-2xl md:text-3xl opacity-70 max-w-4xl mx-auto font-light">
             Start a conversation
@@ -90,10 +90,10 @@ export default function ContactPage() {
               <h4 className="text-xl font-bold text-[#0A1F44] mb-2">Email</h4>
               <p className="text-base text-[#0A1F44] opacity-70">
                 <a
-                  href="mailto:Admin@exodusconsults.com"
+                  href="mailto:hello@exodusconsults.com"
                   className="text-[#D15B12] font-semibold hover:text-[#4CA2A8] transition-colors"
                 >
-                  Admin@exodusconsults.com
+                  hello@exodusconsults.com
                 </a>
               </p>
             </div>
@@ -162,18 +162,6 @@ export default function ContactPage() {
           </div>
         </section>
       </div>
-
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Manrope:wght@400;500;600;700&display=swap');
-        
-        body {
-          font-family: 'Manrope', sans-serif;
-        }
-        
-        h1, h2, h3, h4 {
-          font-family: 'Playfair Display', serif;
-        }
-      `}</style>
     </div>
   );
 }

@@ -32,11 +32,11 @@ export default function Footer() {
               CONTACT
             </h4>
             <a
-              href="mailto:Admin@exodusconsults.com"
+              href="mailto:hello@exodusconsults.com"
               style={{ color: "rgba(217, 217, 217, 0.8)" }}
               className="md:text-sm lg:text-base "
             >
-              Admin@exodusconsults.com
+              hello@exodusconsults.com
             </a>
           </div>
           <div className="md:col-span-2">

@@ -41,7 +41,7 @@ export default function ServicesPage() {
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         {/* Header */}
         <header className="pt-24 pb-16 animate-fade-in-down">
-          <h1 className="text-6xl md:text-7xl font-bold text-[#D8CFC4] mb-6 leading-tight tracking-tight font-serif">
+          <h1 className="text-6xl md:text-7xl font-bold text-[#D8CFC4] mb-6 leading-tight tracking-tight">
             Services
           </h1>
           <p className="text-2xl text-gray-300 max-w-2xl opacity-90">
