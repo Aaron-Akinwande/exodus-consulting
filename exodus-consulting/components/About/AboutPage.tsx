@@ -106,7 +106,7 @@ export default function AboutPage() {
               <a
                 target="_blank"
                 href="https://calendly.com/exodusconsulting26/30min"
-                className="bg-orange-600 text-white px-12 py-5 text-base font-semibold   hover:bg-orange-700  rounded-lg"
+                className="bg-orange-600 text-white px-10 py-5 text-base font-semibold   hover:bg-orange-700  rounded-lg"
               >
                 Discuss Your Needs
               </a>

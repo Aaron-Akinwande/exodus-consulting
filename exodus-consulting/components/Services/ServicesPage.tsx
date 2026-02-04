@@ -52,7 +52,7 @@ export default function ServicesPage() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12  pb-24">
           {services.map((service, index) => (
-            <ServiceCard key={index} service={service} delay={index * 100} />
+            <ServiceCard key={index} service={service} />
           ))}
         </div>
       </div>
