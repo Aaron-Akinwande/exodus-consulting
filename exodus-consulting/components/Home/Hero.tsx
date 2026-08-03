@@ -3,10 +3,7 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <section
-      className="relative min-h-screen flex items-center px-6 lg:px-12 pt-2"
-      
-    >
+    <section className="relative min-h-screen flex items-center px-6 lg:px-12 pt-2">
       <div className="max-w-7xl mx-auto w-full pt-24">
         <div className="max-w-5xl">
           <div
@@ -54,8 +51,9 @@ export default function Hero() {
             operating systems that make business strategy truly executable.
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
-            <a target="_blank"
-              href="https://calendly.com/exodusconsulting26/30min"
+            <a
+              target="_blank"
+              href="https://calendly.com/exodusconsulting/30min"
               className="inline-flex items-center justify-center rounded-md px-10 py-5 font-medium transition-all duration-300"
               style={{
                 backgroundColor: "#D15B12",
