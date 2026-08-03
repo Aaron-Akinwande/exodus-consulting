@@ -23,7 +23,7 @@ export default function CTA() {
         </p>
         <a
           target="_blank"
-          href="https://calendly.com/exodusconsulting26/30min"
+          href="https://calendly.com/exodusconsulting/30min"
           className="inline-flex items-center justify-center rounded-lg px-12 py-6 font-medium transition-all duration-300"
           style={{
             backgroundColor: "#D15B12",
