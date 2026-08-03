@@ -72,7 +72,7 @@ export default function ServicesPage() {
           </p>
           <a
             target="_blank"
-            href="https://calendly.com/exodusconsulting26/30min"
+            href="https://calendly.com/exodusconsulting/30min"
             className="inline-block rounded-lg bg-[#D15B12] text-white px-10 py-4 text-lg font-semibold border-2 border-[#D15B12] transition-all duration-300 hover:bg-transparent hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(209,91,18,0.4)]"
           >
             Discuss your service needs

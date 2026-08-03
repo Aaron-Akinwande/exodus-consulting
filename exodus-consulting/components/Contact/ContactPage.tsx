@@ -43,7 +43,7 @@ export default function ContactPage() {
             </p>
             <a
               target="_blank"
-              href="https://calendly.com/exodusconsulting26/30min"
+              href="https://calendly.com/exodusconsulting/30min"
             >
               <button className="bg-white text-[#D15B12] px-12 py-4 text-sm font-light cursor-pointer border-2 border-white hover:bg-transparent hover:text-white transition-all duration-300 rounded-lg ">
                 Start Diagnostic
@@ -67,7 +67,7 @@ export default function ContactPage() {
             </p>
             <a
               target="_blank"
-              href="https://calendly.com/exodusconsulting26/30min"
+              href="https://calendly.com/exodusconsulting/30min"
             >
               <button className="bg-[#4CA2A8] text-white px-12 py-4 text-sm font-light tracking-wider uppercase border-2 border-[#4CA2A8] hover:bg-transparent hover:text-[#4CA2A8] transition-all duration-300  rounded-lg cursor-pointer">
                 Schedule Now

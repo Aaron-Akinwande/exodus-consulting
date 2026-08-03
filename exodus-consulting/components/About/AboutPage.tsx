@@ -105,7 +105,7 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <a
                 target="_blank"
-                href="https://calendly.com/exodusconsulting26/30min"
+                href="https://calendly.com/exodusconsulting/30min"
                 className="bg-orange-600 text-white px-10 py-5 text-base font-semibold   hover:bg-orange-700  rounded-lg"
               >
                 Discuss Your Needs
