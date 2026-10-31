@@ -1,167 +1,157 @@
 import React from "react";
-import { Mail, MapPin } from "lucide-react";
+import Strip from "@/components/Strip";
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-8 relative z-10">
-        {/* Header */}
-        <header className="pt-32 pb-16 text-center animate-[fadeInDown_1s_ease-out]">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-light mb-8 tracking-tight uppercase leading-none">
-            Contact us
-          </h1>
-          <p className="text-2xl md:text-3xl opacity-70 max-w-4xl mx-auto font-light">
-            Start a conversation
-          </p>
-        </header>
-
-        {/* Value Proposition */}
-        <div className="bg-slate-300 text-slate-900 p-12 md:p-16 mb-24 border-l-4 border-[#4CA2A8] relative shadow-sm">
-          <div className="absolute right-0 top-0 w-48 h-full bg-linear-to-l from-[#4CA2A8]/5 to-transparent pointer-events-none" />
-          <p className="text-xl md:text-2xl leading-relaxed max-w-5xl relative z-10">
-            If you are navigating growth, complexity, or execution challenges,
-            we can help you design the systems required to support your
-            strategy.
-          </p>
+    <div style={{ backgroundColor: "#ffffff" }}>
+      {/* Header */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-12 pt-10 pb-12 lg:pt-14">
+        <div
+          className="text-sm mb-4 uppercase"
+          style={{ letterSpacing: "0.2em", color: "#D25A14" }}
+        >
+          Contact
         </div>
+        <h1
+          className="text-5xl md:text-6xl lg:text-7xl font-light mb-6 max-w-[14ch]"
+          style={{ lineHeight: "1.1", color: "#0A2145" }}
+        >
+          Start a <span className="italic" style={{ color: "#4A9EA6" }}>conversation</span>
+        </h1>
+        <p className="text-lg md:text-xl max-w-[60ch]" style={{ color: "#5a6b85" }}>
+          If you are navigating growth, complexity, or execution challenges,
+          we can help you design the systems required to support your
+          strategy.
+        </p>
+      </section>
 
-        {/* CTA Grid */}
-        <div className="grid md:grid-cols-2 gap-12 mb-24">
+      {/* CTA Grid */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-12 pb-10">
+        <div className="grid md:grid-cols-2 gap-6">
           {/* Primary CTA */}
-          <div className="bg-linear-to-br from-[#D15B12] to-[#B84E0F] text-white p-12 md:p-14 text-center rounded-md cursor-pointer">
-            {/* <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-[#D15B12] to-[#4CA2A8]" /> */}
-
-            <div className="text-xs tracking-[0.15em] uppercase font-semibold mb-6 opacity-90">
+          <div
+            className="p-10 md:p-12 text-center"
+            style={{ backgroundColor: "#0A2145", color: "#ffffff" }}
+          >
+            <div
+              className="text-xs uppercase mb-5"
+              style={{ letterSpacing: "0.15em", color: "#D25A14" }}
+            >
               Primary Option
             </div>
-            <h2 className="text-3xl md:text-4xl font-light mb-6 leading-tight">
+            <h2 className="text-2xl md:text-3xl font-light mb-5">
               Start with a Diagnostic
             </h2>
-            <p className="text-base md:text-lg leading-relaxed mb-10 opacity-95">
+            <p className="text-base mb-8" style={{ color: "#c3cfe0" }}>
               Begin with a comprehensive assessment of your organizational
-              operating system to identify key leverage points for improvement.
+              operating system to identify key leverage points for
+              improvement.
             </p>
-            <a
-              target="_blank"
-              href="https://calendly.com/exodusconsulting/30min"
-            >
-              <button className="bg-white text-[#D15B12] px-12 py-4 text-sm font-light cursor-pointer border-2 border-white hover:bg-transparent hover:text-white transition-all duration-300 rounded-lg ">
+            <a target="_blank" href="https://calendly.com/exodusconsulting/30min">
+              <button
+                className="px-10 py-3.5 text-sm font-medium cursor-pointer transition-all duration-300"
+                style={{
+                  backgroundColor: "#D25A14",
+                  color: "#ffffff",
+                  letterSpacing: "0.05em",
+                }}
+              >
                 Start Diagnostic
               </button>
             </a>
           </div>
 
           {/* Secondary CTA */}
-          <div className="bg-gray-50 p-12 md:p-14 text-center relative overflow-hidden rounded-md">
-            <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-[#D15B12] to-[#4CA2A8] scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left" />
-
-            <div className="text-xs tracking-[0.15em] uppercase font-semibold mb-6 opacity-80 text-[#0A1F44]">
+          <div
+            className="p-10 md:p-12 text-center"
+            style={{ backgroundColor: "#f1f5f9" }}
+          >
+            <div
+              className="text-xs uppercase mb-5"
+              style={{ letterSpacing: "0.15em", color: "#D25A14" }}
+            >
               Alternative Option
             </div>
-            <h2 className="text-3xl md:text-4xl font-light mb-6 leading-tight text-[#0A1F44]">
+            <h2
+              className="text-2xl md:text-3xl font-light mb-5"
+              style={{ color: "#0A2145" }}
+            >
               Schedule a Conversation
             </h2>
-            <p className="text-base md:text-lg leading-relaxed mb-10 opacity-80 text-[#0A1F44]">
+            <p className="text-base mb-8" style={{ color: "#5a6b85" }}>
               Connect with our team to discuss your specific challenges and
               explore how we can support your organization&apos;s needs.
             </p>
-            <a
-              target="_blank"
-              href="https://calendly.com/exodusconsulting/30min"
-            >
-              <button className="bg-[#4CA2A8] text-white px-12 py-4 text-sm font-light tracking-wider uppercase border-2 border-[#4CA2A8] hover:bg-transparent hover:text-[#4CA2A8] transition-all duration-300  rounded-lg cursor-pointer">
+            <a target="_blank" href="https://calendly.com/exodusconsulting/30min">
+              <button
+                className="px-10 py-3.5 text-sm font-medium cursor-pointer transition-all duration-300"
+                style={{
+                  border: "1px solid #4A9EA6",
+                  color: "#4A9EA6",
+                  letterSpacing: "0.05em",
+                }}
+              >
                 Schedule Now
               </button>
             </a>
           </div>
         </div>
+        <p className="mt-8 text-base" style={{ color: "#5a6b85" }}>
+          Or write to us directly at{" "}
+          <a
+            href="mailto:hello@exodusconsults.com"
+            style={{ color: "#0A2145", borderBottom: "1px solid #D25A14" }}
+          >
+            hello@exodusconsults.com
+          </a>
+        </p>
+      </section>
 
-        {/* Contact Information */}
-        <section className="bg-slate-300 rounded-md py-24 text-center animate-[fadeInUp_1s_ease-out_0.7s_backwards]">
-          <h3 className="text-3xl md:text-4xl font-light text-[#0A1F44] mb-12">
-            Other Ways to Reach Us
-          </h3>
-          <div className="flex flex-col md:flex-row justify-center gap-16 max-w-5xl mx-auto">
-            {/* Email */}
-            <div className="text-center flex-1">
-              <div className="w-18 h-18 bg-linear-to-br from-[#D15B12] to-[#4CA2A8] rounded-full flex items-center justify-center mx-auto mb-6 hover:scale-110 hover:rotate-6 transition-transform duration-300">
-                <Mail className="w-8 h-8 text-white" strokeWidth={2} />
-              </div>
-              <h4 className="text-xl font-light text-[#0A1F44] mb-2">Email</h4>
-              <p className="text-base text-[#0A1F44] opacity-70">
-                <a
-                  href="mailto:hello@exodusconsults.com"
-                  className="text-[#D15B12] font-semibold hover:text-[#4CA2A8] transition-colors"
-                >
-                  hello@exodusconsults.com
-                </a>
-              </p>
+      {/* Trust Indicators */}
+      <section
+        className="py-20 px-6 lg:px-12"
+        style={{ borderTop: "1px solid #e3e8ef" }}
+      >
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+          <div>
+            <div
+              className="text-5xl md:text-6xl font-light mb-2"
+              style={{ color: "#D25A14" }}
+            >
+              48hr
             </div>
-
-            {/* Phone */}
-            {/* <div className="text-center flex-1">
-              <div className="w-18 h-18 bg-linear-to-br from-[#D15B12] to-[#4CA2A8] rounded-full flex items-center justify-center mx-auto mb-6 hover:scale-110 hover:rotate-6 transition-transform duration-300">
-                <Phone className="w-8 h-8 text-white" strokeWidth={2} />
-              </div>
-              <h4 className="text-xl font-light text-[#0A1F44] mb-2">Phone</h4>
-              <p className="text-base text-[#0A1F44] opacity-70">
-                <a
-                  href="tel:+1234567890"
-                  className="text-[#D15B12] font-semibold hover:text-[#4CA2A8] transition-colors"
-                >
-                  +1 (234) 567-890
-                </a>
-              </p>
-            </div> */}
-
-            {/* Location */}
-            <div className="text-center flex-1">
-              <div className="w-18 h-18 bg-linear-to-br from-[#D15B12] to-[#4CA2A8] rounded-full flex items-center justify-center mx-auto mb-6 hover:scale-110 hover:rotate-6 transition-transform duration-300">
-                <MapPin className="w-8 h-8 text-white" strokeWidth={2} />
-              </div>
-              <h4 className="text-xl font-light text-[#0A1F44] mb-2">
-                Location
-              </h4>
-              <p className="text-base text-[#0A1F44] opacity-70">
-                Lagos, Nigeria
-                <br />
-                Global Operations
-              </p>
+            <div className="text-lg font-medium" style={{ color: "#5a6b85" }}>
+              Response Time
             </div>
           </div>
-        </section>
-
-        {/* Trust Indicators */}
-        <section className="py-24 border-t border-[#0A1F44]/10">
-          <div className="grid md:grid-cols-3 gap-12 text-center">
-            <div className="p-8">
-              <div className="text-5xl md:text-6xl font-light text-[#D15B12] mb-2 leading-none">
-                48hr
-              </div>
-              <div className="text-lg  opacity-70 font-medium">
-                Response Time
-              </div>
+          <div>
+            <div
+              className="text-5xl md:text-6xl font-light mb-2"
+              style={{ color: "#D25A14" }}
+            >
+              8+
             </div>
-            <div className="p-8">
-              <div className="text-5xl md:text-6xl font-light text-[#D15B12] mb-2 leading-none">
-                8+
-              </div>
-              <div className="text-lg  opacity-70 font-medium">
-                Years across EMEA, LATAM
-                <br />& Globally Distributed Teams
-              </div>
-            </div>
-            <div className="p-8">
-              <div className="text-5xl md:text-6xl font-light text-[#D15B12] mb-2 leading-none">
-                100%
-              </div>
-              <div className="text-lg  opacity-70 font-medium">
-                Confidential
-              </div>
+            <div className="text-lg font-medium" style={{ color: "#5a6b85" }}>
+              Years across EMEA, LATAM
+              <br />& Globally Distributed Teams
             </div>
           </div>
-        </section>
-      </div>
+          <div>
+            <div
+              className="text-5xl md:text-6xl font-light mb-2"
+              style={{ color: "#D25A14" }}
+            >
+              100%
+            </div>
+            <div className="text-lg font-medium" style={{ color: "#5a6b85" }}>
+              Confidential
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Engagement Types */}
+      <Strip />
     </div>
   );
 }

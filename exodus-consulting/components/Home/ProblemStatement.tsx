@@ -1,68 +1,74 @@
-import { Minus } from 'lucide-react';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
+
+const challenges = [
+  "Strategy is clear but execution is inconsistent",
+  "Growth has outpaced structure and decision-making",
+  "People systems are fragmented or overly manual",
+  "Leadership carries too many decisions personally",
+  "Compliance risk increases with scale or multi-country operations",
+];
 
 export default function ProblemStatement() {
   return (
-    <section className="py-32 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-20">
-          <div>
-            <div
-              className="text-sm mb-6"
-              style={{ letterSpacing: "0.15em", color: "#D15B12" }}
-            >
-              THE CHALLENGE
-            </div>
-            <h2
-              className="text-4xl md:text-5xl lg:text-6xl font-light mb-8"
-              style={{ lineHeight: "1.2", color: "#ffffff" }}
-            >
-              When Business
-              <br />
-              Ambition Outgrows
-              <br />
-              <span className="italic" style={{ color: "#4CA2A8" }}>
-                Internal Systems
-              </span>
-            </h2>
-          </div>
-          <div className="space-y-8 pt-8">
-            {[
-              "Strategy is clear but execution is inconsistent",
-              "Growth has outpaced structure and decision-making",
-              "People systems are fragmented or overly manual",
-              "Leadership carries too many decisions personally",
-              "Compliance risk increases with scale or multi-country operations",
-            ].map((text, i) => (
-              <div key={i} className="flex items-start space-x-4">
-                <Minus
-                  className="mt-1 shrink-0"
-                  size={20}
-                  style={{ color: "rgba(209, 91, 18, 0.5)" }}
-                />
-                <p
-                  className="text-lg"
-                  style={{ color: "rgba(217, 217, 217, 0.7)" }}
-                >
-                  {text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
+    <section id="challenge" className="py-20 lg:py-28 px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.05fr_.95fr] gap-12 lg:gap-16 items-center">
         <div
-          className="mt-20 pt-12"
-          style={{ borderTop: "1px solid rgba(217, 217, 217, 0.1)" }}
+          className="relative overflow-hidden order-2 lg:order-1"
+          style={{ aspectRatio: "4/3.1" }}
         >
-          <p
-            className="text-2xl md:text-3xl font-light max-w-4xl"
-            style={{ color: "#ffffff" }}
+          <Image
+            src="/images/challenge-review.jpg"
+            alt="Two executives reviewing performance data"
+            fill
+            sizes="(min-width: 1024px) 560px, 100vw"
+            className="object-cover"
+            style={{ objectPosition: "62% 40%" }}
+          />
+        </div>
+        <div className="order-1 lg:order-2">
+          <div
+            className="text-sm mb-4 uppercase"
+            style={{ letterSpacing: "0.2em", color: "#D25A14" }}
           >
-            We help organizations move from complexity to clarity,
-            <br />
-            and from intent to{" "}
-            <span className="italic" style={{ color: "#D15B12" }}>
+            The Challenge
+          </div>
+          <h2
+            className="text-4xl md:text-5xl font-light mb-7"
+            style={{ lineHeight: "1.15", color: "#0A2145" }}
+          >
+            When business ambition outgrows{" "}
+            <span className="italic" style={{ color: "#4A9EA6" }}>
+              internal systems
+            </span>
+          </h2>
+          <ul className="mb-7">
+            {challenges.map((text, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-4 py-3.5 text-base lg:text-lg"
+                style={{
+                  borderTop: "1px solid #e3e8ef",
+                  borderBottom:
+                    i === challenges.length - 1 ? "1px solid #e3e8ef" : "none",
+                  color: "#0A2145",
+                }}
+              >
+                <span
+                  className="inline-block w-3.5 h-px shrink-0"
+                  style={{ backgroundColor: "#D25A14" }}
+                />
+                {text}
+              </li>
+            ))}
+          </ul>
+          <p
+            className="text-xl md:text-2xl font-light"
+            style={{ color: "#0A2145" }}
+          >
+            We help organizations move from complexity to clarity, and from
+            intent to{" "}
+            <span className="italic" style={{ color: "#D25A14" }}>
               impact
             </span>
             .
