@@ -20,7 +20,7 @@ const approach = [
 ];
 
 const dotLevels = [2, 4, 5];
-const minHeights = ["lg:min-h-[210px]", "lg:min-h-[270px]", "lg:min-h-[330px]"];
+const minHeights = ["lg:min-h-[340px]", "lg:min-h-[410px]", "lg:min-h-[470px]"];
 
 export default function Philosophy() {
   return (
