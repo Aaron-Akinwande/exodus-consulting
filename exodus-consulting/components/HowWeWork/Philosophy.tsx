@@ -1,165 +1,189 @@
 import React from "react";
 import { engagementModels, osLayers } from "./Constants";
-import { ChevronRight } from "lucide-react";
+
+const approach = [
+  {
+    num: "01",
+    title: "Engagement Philosophy",
+    desc: "We meet organizations where they are, while building the systems required for sustainable performance. We prioritize clarity, practicality, and long-term impact over generic solutions or off-the-shelf frameworks.",
+  },
+  {
+    num: "02",
+    title: "Client Partnership Model",
+    desc: "We co-create with leadership teams, reflecting organizational context, growth stage, and strategic priorities. Each engagement starts with a structured ALIGN diagnostic, so recommendations are relevant, prioritized, and executable.",
+  },
+  {
+    num: "03",
+    title: "Modular by Design",
+    desc: "Engage on a single ALIGN dimension or across several. As priorities evolve, targeted add-ons let you scale the work as value becomes clear.",
+  },
+];
+
+const dotLevels = [2, 4, 5];
+const minHeights = ["lg:min-h-[340px]", "lg:min-h-[410px]", "lg:min-h-[470px]"];
 
 export default function Philosophy() {
   return (
     <div>
-      {" "}
-      {/* Philosophy */}
-      {/* <section className="px-12 py-20 ">
+      {/* Our Approach */}
+      <section
+        id="os-layers-approach"
+        className="py-20 lg:py-24 px-6 lg:px-12"
+        style={{ backgroundColor: "#f1f5f9" }}
+      >
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <div className="text-xs tracking-widest text-orange-600 mb-5 font-semibold">
-              CORE PRINCIPLES
-            </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 tracking-tight">
-              Our Engagement Philosophy
-            </h2>
-            <div className="h-px w-20 bg-orange-600 mx-auto"></div>
+          <div
+            className="text-sm mb-4 uppercase"
+            style={{ letterSpacing: "0.2em", color: "#D25A14" }}
+          >
+            Our Approach
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px ">
-            {[
-              {
-                title: "Meet You Where You Are",
-                desc: "Engagements designed to meet organizations where they are, while building systems for sustainable performance",
-              },
-              {
-                title: "Clarity Over Generic Solutions",
-                desc: "We prioritize clarity, practicality, and long-term impact over generic solutions or off-the-shelf frameworks",
-              },
-              {
-                title: "Intentional Execution",
-                desc: "Our work focuses on deliberate alignment across ALIGN dimensions so execution becomes intentional rather than accidental",
-              },
-              {
-                title: "Co-Creation Partnership",
-                desc: "We work in close partnership with leadership teams, co-creating solutions that reflect organizational context and priorities",
-              },
-              {
-                title: "Diagnostic-Led",
-                desc: "Each engagement is grounded in structured diagnostics, ensuring recommendations are relevant, prioritized, and executable",
-              },
-              {
-                title: "Modular by Design",
-                desc: "All engagements are modular. Engage on a single dimension or across multiple, expanding as priorities evolve",
-              },
-            ].map((principle, i) => (
-              <div
-                key={i}
-                className="p-12 border transition-all duration-300 hover:shadow-lg"
-              >
-                <h3 className="text-lg font-medium mb-4 text-orange-600 tracking-tight">
-                  {principle.title}
+          <h2
+            className="text-4xl md:text-5xl font-light mb-12"
+            style={{ color: "#0A2145" }}
+          >
+            Built with you, scaled as value shows
+          </h2>
+          <div className="grid md:grid-cols-3 gap-10">
+            {approach.map((item) => (
+              <div key={item.num}>
+                <b
+                  className="block font-extralight mb-3"
+                  style={{ fontSize: "56px", color: "#4A9EA6", lineHeight: 1 }}
+                >
+                  {item.num}
+                </b>
+                <h3
+                  className="text-2xl font-normal mb-2"
+                  style={{ color: "#0A2145" }}
+                >
+                  {item.title}
                 </h3>
-                <p className="text-sm leading-relaxed font-light">
-                  {principle.desc}
+                <p className="text-sm" style={{ color: "#5a6b85" }}>
+                  {item.desc}
                 </p>
               </div>
             ))}
           </div>
         </div>
-      </section> */}
-      {/* OS Layers */}
-      <section className="px-12 py-20 " id="os-layers">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <div className="text-xs tracking-widest text-orange-600 mb-5 font-semibold">
-              ORGANIZATIONAL OS LAYERS
-            </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-5  tracking-tight">
-              Six Operating System Layers
-            </h2>
-            <div className="h-px w-20 bg-orange-600 mx-auto mb-7"></div>
-            <p className="text-lg max-w-3xl mx-auto  font-light leading-relaxed">
-              Aligned to the ALIGN methodology. Each layer can be engaged
-              independently or as part of a broader operating system
-              partnership.
-            </p>
-          </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* OS Layers */}
+      <section className="py-20 lg:py-24 px-6 lg:px-12" id="os-layers">
+        <div className="max-w-7xl mx-auto">
+          <div
+            className="text-sm mb-4 uppercase"
+            style={{ letterSpacing: "0.2em", color: "#D25A14" }}
+          >
+            Operating System Layers
+          </div>
+          <h2
+            className="text-4xl md:text-5xl font-light mb-4"
+            style={{ color: "#0A2145" }}
+          >
+            Six layers, engaged alone or together
+          </h2>
+          <p className="max-w-[68ch] mb-8 text-lg" style={{ color: "#5a6b85" }}>
+            Our work is organized across six operating system layers aligned
+            to the ALIGN methodology.
+          </p>
+
+          <div>
             {osLayers.map((layer, idx) => (
               <div
-                key={idx}
-                className="p-12 bg-slate-300 border border-slate-900/8 transition-all duration-300 hover:shadow-md"
+                key={layer.name}
+                className="grid grid-cols-1 md:grid-cols-[60px_1.2fr_1fr] gap-y-2 md:gap-x-6 items-start py-6"
+                style={{ borderTop: "1px solid #e3e8ef" }}
               >
-                <div className="flex items-start gap-5 mb-6">
-                  <div className="w-14 h-14 bg-orange-600 text-white flex items-center justify-center text-xl font-light shrink-0">
-                    {idx + 1}
-                  </div>
-                  <h3 className="text-xl font-medium text-slate-900 leading-snug mt-2">
+                <small
+                  className="text-xs"
+                  style={{ color: "#D25A14", letterSpacing: "0.14em" }}
+                >
+                  {String(idx + 1).padStart(2, "0")}
+                </small>
+                <div>
+                  <h3
+                    className="text-xl font-normal mb-1"
+                    style={{ color: "#0A2145" }}
+                  >
                     {layer.name}
                   </h3>
+                  <p className="text-sm" style={{ color: "#5a6b85" }}>
+                    {layer.focus}
+                  </p>
                 </div>
-                <p className="text-sm text-slate-900 mb-6 leading-relaxed opacity-70 font-light">
-                  {layer.focus}
-                </p>
-                <div className="pt-6 border-t border-slate-900/10">
-                  <h4 className="text-xs font-bold tracking-widest text-teal-500 mb-4">
-                    TYPICAL OUTPUTS
-                  </h4>
-                  {layer.outputs.map((output, i) => (
-                    <div key={i} className="flex gap-3 mb-3">
-                      <ChevronRight
-                        size={16}
-                        className="text-teal-500 mt-0.5 shrink-0"
-                      />
-                      <span className="text-sm text-slate-900 leading-normal font-light">
-                        {output}
-                      </span>
-                    </div>
-                  ))}
+                <div className="text-sm" style={{ color: "#0A2145" }}>
+                  <strong>Typical outputs:</strong> {layer.outputs.join(", ")}
+                  .
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-      {/* Engagement Models */}
-      <section className="px-12 py-20 ">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <div className="text-xs tracking-widest text-orange-600 mb-5 font-semibold">
-              ENGAGEMENT OPTIONS
-            </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight">
-              Three Engagement Models
-            </h2>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+      {/* Engagement Models */}
+      <section
+        className="py-20 lg:py-24 px-6 lg:px-12"
+        style={{ backgroundColor: "#f1f5f9" }}
+      >
+        <div className="max-w-7xl mx-auto">
+          <div
+            className="text-sm mb-4 uppercase"
+            style={{ letterSpacing: "0.2em", color: "#D25A14" }}
+          >
+            Engagement Models
+          </div>
+          <h2
+            className="text-4xl md:text-5xl font-light mb-12"
+            style={{ color: "#0A2145" }}
+          >
+            Three ways to engage
+          </h2>
+
+          <div className="grid lg:grid-cols-3 gap-6 lg:items-end">
             {engagementModels.map((model, idx) => (
               <div
-                key={idx}
-                className={`p-14 bg-slate-300 relative transition-all duration-300 ${
-                  model.popular
-                    ? "border-2 border-orange-600"
-                    : "border border-slate-900/10"
-                }`}
+                key={model.name}
+                className={`bg-white p-7 flex flex-col ${minHeights[idx]}`}
+                style={{
+                  border: "1px solid #e3e8ef",
+                  borderTop: "4px solid #D25A14",
+                }}
               >
-                {model.popular && (
-                  <div className="absolute top-6 right-6 px-4 py-1.5 bg-orange-600 text-white text-xs font-light tracking-wider rounded-sm">
-                    MOST COMMON
-                  </div>
-                )}
-                <h3 className="text-2xl font-normal mb-4 text-slate-900 tracking-tight">
+                <small
+                  className="text-xs"
+                  style={{ color: "#D25A14", letterSpacing: "0.14em" }}
+                >
+                  {String(idx + 1).padStart(2, "0")}
+                </small>
+                <h3
+                  className="text-2xl font-normal mt-2 mb-2"
+                  style={{ color: "#0A2145" }}
+                >
                   {model.name}
                 </h3>
-                <p className="text-sm text-teal-500 mb-5 font-medium tracking-wide">
+                <p
+                  className="text-sm font-medium mb-3"
+                  style={{ color: "#4A9EA6", letterSpacing: "0.02em" }}
+                >
                   {model.scope}
                 </p>
-                <p className="text-base leading-relaxed text-slate-900 mb-7 opacity-75 font-light">
+                <p className="text-sm mb-4" style={{ color: "#5a6b85" }}>
                   {model.description}
                 </p>
-                <div className="p-6 bg-teal-500/6 border-l-4 border-teal-500">
-                  <p className="text-sm text-slate-900 leading-relaxed font-light">
-                    <strong className="text-teal-500 font-semibold">
-                      Ideal for:
-                    </strong>{" "}
-                    {model.ideal}
-                  </p>
+                <div
+                  className="text-sm pt-4 mt-auto"
+                  style={{ borderTop: "1px solid #e3e8ef", color: "#0A2145" }}
+                >
+                  <strong>Ideal for:</strong> {model.ideal}
+                </div>
+                <div
+                  className="mt-3.5 text-sm"
+                  style={{ color: "#D25A14", letterSpacing: "0.3em" }}
+                >
+                  {"●".repeat(dotLevels[idx]) +
+                    "○".repeat(5 - dotLevels[idx])}
                 </div>
               </div>
             ))}

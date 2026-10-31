@@ -1,30 +1,48 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
-export default function ServiceCard({ service }: any) {
+type Service = {
+  number: string;
+  title: string;
+  image: string;
+  alt: string;
+  position?: string;
+};
 
+export default function ServiceCard({ service }: { service: Service }) {
   return (
-    <article
-      className="relative bg-white/3 border border-white/10 p-12 backdrop-blur-sm transition-all duration-400 cursor-pointer overflow-hidden"
-    >
-      {/* Large number watermark */}
-      <span className="absolute top-6 right-8 text-6xl font-light text-[#C5A880] opacity-20 font-serif leading-none">
-        {service.number}
-      </span>
-
-      <div className="relative z-10">
-        <h2 className="text-3xl font-light text-[#D8CFC4] mb-5 leading-tight font-serif">
-          {service.title}
-        </h2>
-        <p className="text-lg text-gray-300 leading-relaxed mb-8 opacity-85">
-          {service.description}
-        </p>
-        <a
-          href="/how-we-work#os-layers"
-          className="inline-flex items-center gap-2 text-[#D15B12] font-semibold text-base transition-all duration-300 tracking-wide group"
+    <article className="bg-white border border-[#e3e8ef] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_44px_rgba(10,33,69,0.14)]">
+      <div className="relative" style={{ aspectRatio: "4/3" }}>
+        <Image
+          src={service.image}
+          alt={service.alt}
+          fill
+          sizes="(min-width: 768px) 480px, 100vw"
+          className="object-cover"
+          style={{ objectPosition: service.position ?? "50% 50%" }}
+        />
+      </div>
+      <div className="p-7">
+        <small
+          style={{
+            color: "#D25A14",
+            letterSpacing: "0.16em",
+            fontSize: "13px",
+          }}
         >
-          Learn about our approach
-          <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+          {service.number}
+        </small>
+        <h3
+          className="text-2xl font-normal mt-2 mb-3"
+          style={{ lineHeight: "1.3", color: "#0A2145" }}
+        >
+          {service.title}
+        </h3>
+        <a
+          href="/how-we-work"
+          className="inline-block text-sm"
+          style={{ color: "#D25A14" }}
+        >
+          See how we work →
         </a>
       </div>
     </article>

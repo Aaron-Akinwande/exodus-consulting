@@ -32,22 +32,23 @@ export default function NavBar() {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-500 ${
-        scrolled ? "shadow-lg" : ""
+        scrolled ? "shadow-sm" : ""
       }`}
       style={{
-        backgroundColor: "rgba(10, 31, 68)",
-        borderBottom: "1px solid rgba(217, 217, 217)",
+        backgroundColor: "rgba(255, 255, 255, 0.94)",
+        backdropFilter: "blur(8px)",
+        borderBottom: "1px solid #e3e8ef",
       }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="flex justify-between items-center h-24">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3 rounded-lg overflow-hidden">
             <a href="#top">
               <Image
-                src="/exoLogo.png"
+                src="/exodus-wordmark.png"
                 alt="exodus-logo"
-                width={150}
-                height={100}
+                width={190}
+                height={34}
               />
             </a>
           </div>
@@ -63,9 +64,8 @@ export default function NavBar() {
                   className="text-sm transition-all duration-300"
                   style={{
                     letterSpacing: "0.05em",
-                    color: "#D9D9D9",
-                    opacity: isActive ? 1 : 0.6,
-                    borderBottom: isActive ? "2px solid #D9D9D9" : "none",
+                    color: isActive ? "#0A2145" : "#5a6b85",
+                    borderBottom: isActive ? "1px solid #0A2145" : "none",
                     paddingBottom: "4px",
                   }}
                 >
@@ -77,7 +77,7 @@ export default function NavBar() {
 
           <button
             className="md:hidden"
-            style={{ color: "#D9D9D9" }}
+            style={{ color: "#0A2145" }}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -89,8 +89,8 @@ export default function NavBar() {
         <div
           className="md:hidden"
           style={{
-            backgroundColor: "rgba(10, 31, 68, 0.98)",
-            borderTop: "1px solid rgba(217, 217, 217, 0.1)",
+            backgroundColor: "rgba(255, 255, 255, 0.98)",
+            borderTop: "1px solid #e3e8ef",
           }}
         >
           <div className="px-6 py-8 space-y-6">
@@ -104,8 +104,7 @@ export default function NavBar() {
                   className="block text-lg"
                   style={{
                     letterSpacing: "0.05em",
-                    color: "#D9D9D9",
-                    opacity: isActive ? 1 : 0.7,
+                    color: isActive ? "#0A2145" : "#5a6b85",
                   }}
                   onClick={() => setMobileMenuOpen(false)}
                 >
