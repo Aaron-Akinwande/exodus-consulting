@@ -1,20 +1,22 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import React from "react";
+type FocusCardProps = {
+  icon: string;
+  title: string;
+  description: string;
+};
 
-export default function FocusCard({ icon, title, description }: any) {
+export default function FocusCard({ icon, title, description }: FocusCardProps) {
   return (
-    <div className="group bg-slate-300 border border-slate-900/8 p-10 relative overflow-hidden transition-all duration-400 hover:bg-white hover:border-orange-600 hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-900/8">
-      <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-orange-600 to-teal-500 transform scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
-
-      <div className="w-12 h-12 rounded-full bg-linear-to-br from-orange-600 to-teal-500 flex items-center justify-center mb-6 font-serif font-bold text-2xl text-white">
+    <div className="group bg-white border border-[#e3e8ef] p-8 transition-all duration-300 hover:border-[#D25A14] hover:-translate-y-1 hover:shadow-[0_20px_44px_rgba(10,33,69,0.1)]">
+      <div
+        className="w-11 h-11 rounded-full flex items-center justify-center mb-5 font-semibold text-xl text-white"
+        style={{ background: "linear-gradient(135deg, #D25A14, #4A9EA6)" }}
+      >
         {icon}
       </div>
-
-      <h3 className="font-serif text-xl font-light text-slate-900 mb-3">
+      <h3 className="text-xl font-normal mb-2" style={{ color: "#0A2145" }}>
         {title}
       </h3>
-
-      <p className="text-sm text-slate-900 opacity-70 leading-relaxed">
+      <p className="text-sm" style={{ color: "#5a6b85" }}>
         {description}
       </p>
     </div>

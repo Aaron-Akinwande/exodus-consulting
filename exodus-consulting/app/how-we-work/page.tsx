@@ -7,7 +7,7 @@ export default function page() {
   return (
     <div
       className="min-h-screen"
-      style={{ backgroundColor: "#0A1F44", color: "#D9D9D9" }}
+      style={{ backgroundColor: "#ffffff", color: "#0A2145" }}
     >
       <NavBar />
       <div>
