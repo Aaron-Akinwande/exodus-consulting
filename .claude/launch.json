@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "exodus-dev",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd exodus-consulting && npm run dev"],
+      "port": 3000
+    }
+  ]
+}

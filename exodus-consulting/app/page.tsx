@@ -7,13 +7,13 @@ import Hero from "@/components/Home/Hero";
 import NavBar from "@/components/NavBar";
 import ProblemStatement from "@/components/Home/ProblemStatement";
 import Services from "@/components/Home/Services";
-// import Align from "@/components/HowWeWork/Align";
+import Strip from "@/components/Strip";
 
 export default function Home() {
   return (
     <div
       className="min-h-screen"
-      style={{ backgroundColor: "#0A1F44", color: "#D9D9D9" }}
+      style={{ backgroundColor: "#ffffff", color: "#0A2145" }}
       id="top"
     >
       {/* Navigation */}
@@ -22,6 +22,9 @@ export default function Home() {
       {/* Hero Section */}
       <Hero />
 
+      {/* Engagement Stats */}
+      <Strip />
+
       {/* Problem Statement */}
       <ProblemStatement />
 
@@ -29,7 +32,6 @@ export default function Home() {
       <Services />
 
       {/* ALIGN Framework */}
-      {/* <Align /> */}
       <Align />
 
       {/* CTA Section */}

@@ -1,146 +1,115 @@
-import React, { useState } from 'react'
-import { alignDimensions } from './Constants';
-import { Check, Minus } from 'lucide-react';
+import React, { useState } from "react";
+import { alignDimensions } from "./Constants";
 
 export default function Align() {
-  const [selectedDimension, setSelectedDimension] = useState(0);
+  const [selected, setSelected] = useState(0);
+  const dim = alignDimensions[selected];
 
   return (
-    <div>
-      {/* ALIGN Methodology Hero */}
-      <section className="px-12 py-20 bg-linear-to-b  relative">
-        <div className="max-w-7xl mx-auto text-center relative z-10">
-          <div className="text-xs tracking-widest text-orange-600 mb-6 font-semibold">
-            PROPRIETARY METHODOLOGY
-          </div>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-light mb-8 text-white tracking-tight">
-            The ALIGN Methodology
-          </h2>
-          <div className="h-px w-30 bg-orange-600 mx-auto mb-10"></div>
-          <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed text-white/85">
-            A structured way to diagnose, design, and embed the systems that
-            enable strategy to translate into sustained performance. ALIGN
-            ensures that aspiration, leadership, infrastructure, growth
-            enablers, and narrative are deliberately aligned, so execution is
-            consistent rather than accidental.
-          </p>
+    <section className="py-20 lg:py-24 px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto">
+        <div
+          className="text-sm mb-4 uppercase"
+          style={{ letterSpacing: "0.2em", color: "#D25A14" }}
+        >
+          The ALIGN Methodology
         </div>
-      </section>
+        <h2
+          className="text-4xl md:text-5xl font-light mb-5"
+          style={{ color: "#0A2145" }}
+        >
+          Five dimensions, deliberately aligned
+        </h2>
+        <p className="max-w-[68ch] mb-9 text-lg" style={{ color: "#5a6b85" }}>
+          ALIGN is EXODUS&apos; proprietary organizational operating system
+          methodology. It provides a structured way to diagnose, design, and
+          embed the systems that enable strategy to translate into sustained
+          performance, so execution is consistent rather than accidental.
+        </p>
 
-      {/* ALIGN Dimensions Interactive */}
-      <section className="px-12 pb-32 ">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-5 gap-0.5  bg-white/5">
-            {alignDimensions.map((dim, idx) => (
+        <div className="grid lg:grid-cols-[280px_1fr] gap-7 items-start">
+          <div className="flex lg:flex-col flex-wrap gap-0 border-t lg:border-t-0 border-[#e3e8ef]">
+            {alignDimensions.map((d, idx) => (
               <button
-                key={idx}
-                onClick={() => setSelectedDimension(idx)}
-                className={`p-10 transition-all duration-500 text-center ${
-                  selectedDimension === idx
-                    ? "bg-slate-300"
-                    : "bg-slate-800 hover:bg-slate-700"
-                }`}
+                key={d.letter}
+                onClick={() => setSelected(idx)}
+                className="text-left px-5 py-4 text-lg lg:text-xl font-light transition-colors duration-200"
+                style={{
+                  borderLeft: `3px solid ${
+                    idx === selected ? "#D25A14" : "#e3e8ef"
+                  }`,
+                  backgroundColor: idx === selected ? "#0A2145" : "transparent",
+                  color: idx === selected ? "#ffffff" : "#0A2145",
+                }}
               >
-                <div
-                  className={`text-6xl font-thin mb-4 transition-all duration-500 ${
-                    selectedDimension === idx ? "" : "text-white/20"
-                  }`}
-                  style={{
-                    color: selectedDimension === idx ? dim.color : undefined,
-                  }}
-                >
-                  {dim.letter}
-                </div>
-                <div
-                  className={`text-sm tracking-wide transition-all duration-500 ${
-                    selectedDimension === idx
-                      ? "font-semibold text-slate-900"
-                      : "font-normal text-white/70"
-                  }`}
-                >
-                  {dim.name}
-                </div>
+                {d.letter} {d.name}
               </button>
             ))}
           </div>
 
-          <div className="bg-slate-300 p-16 min-h-100">
-            <div
-              className={`border-l-8 pl-12 mb-12`}
-              style={{ borderColor: alignDimensions[selectedDimension].color }}
-            >
-              <h3 className="text-5xl font-light mb-5 text-slate-900 tracking-tight">
-                {alignDimensions[selectedDimension].name}
-              </h3>
-              <p
-                className="text-xl mb-7 italic font-normal leading-normal"
-                style={{ color: alignDimensions[selectedDimension].color }}
+          <div className="bg-white border border-[#e3e8ef] p-7 lg:p-9 grid md:grid-cols-2 gap-8">
+            <div className="md:col-span-2">
+              <h3
+                className="text-3xl font-light mb-2"
+                style={{ color: "#0A2145" }}
               >
-                {alignDimensions[selectedDimension].tagline}
+                {dim.name}
+              </h3>
+              <p className="mb-3" style={{ color: "#5a6b85" }}>
+                {dim.tagline}
               </p>
-              <p className="text-base leading-relaxed text-slate-900/80 font-light">
-                {alignDimensions[selectedDimension].description}
-              </p>
+              <p style={{ color: "#5a6b85" }}>{dim.description}</p>
             </div>
-
-            <div className="grid md:grid-cols-2 gap-12">
-              <div>
-                <h4 className="text-xs font-bold tracking-widest text-orange-600 mb-6">
-                  WHAT THIS ADDRESSES
-                </h4>
-                <div className="flex flex-col gap-4">
-                  {alignDimensions[selectedDimension].addresses.map(
-                    (item, i) => (
-                      <div key={i} className="flex gap-4 items-start">
-                        <Minus
-                          size={18}
-                          className="text-slate-900/30 mt-1 shrink-0"
-                        />
-                        <span className="text-sm text-slate-900/70 leading-relaxed font-light">
-                          {item}
-                        </span>
-                      </div>
-                    ),
-                  )}
-                </div>
-              </div>
-
-              <div>
-                <h4
-                  className="text-xs font-bold tracking-widest mb-6"
-                  style={{ color: alignDimensions[selectedDimension].color }}
-                >
-                  WHAT CHANGES
-                </h4>
-                <div className="flex flex-col gap-4">
-                  {alignDimensions[selectedDimension].changes.map((item, i) => (
-                    <div key={i} className="flex gap-4 items-start">
-                      <Check
-                        size={18}
-                        className="mt-1 shrink-0"
-                        style={{
-                          color: alignDimensions[selectedDimension].color,
-                        }}
-                      />
-                      <span className="text-sm text-slate-900 leading-relaxed font-normal">
-                        {item}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div>
+              <h4
+                className="text-xs font-normal uppercase mb-3"
+                style={{ letterSpacing: "0.16em", color: "#D25A14" }}
+              >
+                What this addresses
+              </h4>
+              <ul>
+                {dim.addresses.map((item, i) => (
+                  <li
+                    key={i}
+                    className="py-2.5 text-sm"
+                    style={{ borderTop: "1px solid #e3e8ef", color: "#0A2145" }}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-
-          <div className="mt-0.5 p-12 bg-teal-500/10 border-l-4 border-teal-500 text-center">
-            <p className="text-xl italic text-white leading-relaxed font-light">
-              Together, these five dimensions form an integrated organizational
-              operating system that enables clarity at the top and coherence
-              across the organization.
-            </p>
+            <div>
+              <h4
+                className="text-xs font-normal uppercase mb-3"
+                style={{ letterSpacing: "0.16em", color: "#D25A14" }}
+              >
+                What changes
+              </h4>
+              <ul>
+                {dim.changes.map((item, i) => (
+                  <li
+                    key={i}
+                    className="py-2.5 text-sm"
+                    style={{ borderTop: "1px solid #e3e8ef", color: "#0A2145" }}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+
+        <p
+          className="italic text-xl font-light mt-9 max-w-[60ch]"
+          style={{ color: "#0A2145" }}
+        >
+          Together, these five dimensions form an integrated organizational
+          operating system that enables clarity at the top and coherence
+          across the organization.
+        </p>
+      </div>
+    </section>
   );
 }
